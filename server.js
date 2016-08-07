@@ -1,5 +1,5 @@
 var mongo=require("mongodb").MongoClient;
-var mongourl='mongodb://localhost:27017/url-shorten';
+var mongourl=process.env.MONGOLAB_URI || 'mongodb://localhost:27017/url-shorten';
 var db={};
 var express=require("express");
 var app=express();
