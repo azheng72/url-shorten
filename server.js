@@ -3,6 +3,7 @@ var mongourl='mongodb://localhost:27017/url-shorten';
 var db={};
 var express=require("express");
 var app=express();
+app.set('json spaces', 10);
 var base=require("./base62");
 //const url=require("url");
 var validUrl = require('valid-url');
