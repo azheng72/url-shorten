@@ -102,7 +102,7 @@ app.get('/add/*',function(req,res){
 
 app.get("/",function(req,res){
     console.log("someone connect to host-url");
-    res.send("<h1>URL SHORTEN SERVICE!</h1><p>Usage:</p><p>Add Shoten Url:  "+req.protocol + '://' +req.get('host')+"/add/Your-Long-Url</p><p>Then access the shorten url given by the json</p>");
+    res.send("<h1>URL SHORTEN SERVICE!</h1><p>Usage:</p><p>Add Shoten Url:  "+req.protocol + '://' +req.get('host')+"/add/https://Your-Long-Url</p><p>Then access the shorten url given by the json</p>");
     res.end();
 });
 app.listen(process.env.PORT ||8080,function(){
