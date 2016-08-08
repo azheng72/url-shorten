@@ -1,5 +1,5 @@
 var mongo=require("mongodb").MongoClient;
-var mongourl=process.env.ORMONGO_URL || 'mongodb://localhost:27017/url-shorten';
+var mongourl= process.env.MONGODB_URI;//'mongodb://heroku_1q16nkrw:t5bk8f4hro7h92m5pf2e8ks21d@ds145395.mlab.com:45395/heroku_1q16nkrw';//process.env.ORMONGO_URL || 'mongodb://localhost:27017/url-shorten';
 var db={};
 var express=require("express");
 var app=express();
